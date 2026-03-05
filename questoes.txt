@@ -1,0 +1,51 @@
+Questão 1
+
+O HeapSort possui complexidade O(n log n) garantida porque ele trabalha com uma estrutura chamada Heap, que é uma árvore binária completa. A construção do heap tem custo O(n) e, depois disso, cada remoção do maior elemento custa O(log n). Como essa remoção acontece n vezes, o tempo total sempre será O(n log n), independentemente da ordem inicial dos dados.
+
+Já o ShellSort não tem uma complexidade fixa porque seu desempenho depende da sequência de gaps (intervalos) escolhida. Dependendo desses valores e da organização do vetor, ele pode ser mais rápido ou mais lento. Em alguns casos pode se aproximar de O(n log n), mas em outros pode chegar perto de O(n²). Por isso não é previsível.
+
+ Questão 2
+
+Vetor dado:
+
+[30, 12, 45, 6, 18, 3]
+
+a) Construção do Max-Heap
+
+Organizando os valores para que o maior elemento fique na raiz e cada pai seja maior que seus filhos, o Max-Heap fica:
+
+[45, 18, 30, 6, 12, 3]
+
+b) Após a primeira extração da raiz
+
+Primeiro trocamos o 45 com o último elemento (3) e removemos o 45.
+Depois reorganizamos o heap.
+
+O vetor fica:
+
+[30, 18, 3, 6, 12]
+
+ Questão 3
+
+Analisando as afirmativas:
+
+I – ShellSort é estável → Falso
+II – HeapSort utiliza estrutura baseada em árvore binária completa → Verdadeiro
+III – HeapSort depende da sequência de gaps → Falso
+IV – ShellSort é uma melhoria do Insertion Sort → Verdadeiro
+
+Alternativa correta:
+
+A) Apenas II e IV
+
+ Questão 4
+
+Em um sistema que processa milhões de registros por dia, o mais indicado seria o HeapSort.
+
+Isso porque ele tem complexidade garantida de O(n log n) em todos os casos, sendo mais previsível e seguro para grandes volumes de dados. O ShellSort pode variar bastante dependendo da sequência de gaps utilizada, o que pode gerar desempenho instável.
+
+ Questão 5
+
+A estrutura Heap pode ser usada em algoritmos de grafos como uma fila de prioridade.
+
+Um exemplo é o algoritmo de Dijkstra, que usa uma Min-Heap para sempre selecionar o vértice com menor distância acumulada. Isso torna o algoritmo mais eficiente, reduzindo o tempo de execução.
